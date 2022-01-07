@@ -19,8 +19,8 @@ Essa será uma aplicação onde o seu principal objetivo é uma pequena aplicaç
 ## Imagens
 
 <div>
-   <img src="./assets/img/image-1.png" width="500" />
-   <img src="./assets/img/image-2.png" width="500" />
+   <img src="./public/assets/img/image-1.png" width="500" />
+   <img src="./public/assets/img/image-2.png" width="500" />
 </div>
 
 ## :rocket: Techs
