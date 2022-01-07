@@ -19,7 +19,7 @@ describe('App Page', () => {
     const addedFirstTaskTitle = screen.getByText('Desafio ReactJS Ignite');
 
     expect(addedFirstTaskTitle).toHaveTextContent('Desafio ReactJS Ignite');
-    expect(addedFirstTaskTitle.parentElement).not.toHaveClass('completed')
+    expect(addedFirstTaskTitle.parentElement).not.toHaveClass('completed');
 
     fireEvent.change(taskInput, {
       target: {
@@ -32,11 +32,11 @@ describe('App Page', () => {
 
     expect(addedFirstTaskTitle).toBeInTheDocument();
     expect(addedFirstTaskTitle).toHaveTextContent('Desafio ReactJS Ignite');
-    expect(addedFirstTaskTitle.parentElement).not.toHaveClass('completed')
+    expect(addedFirstTaskTitle.parentElement).not.toHaveClass('completed');
 
     expect(addedSecondTaskTitle).toHaveTextContent('Beber água');
-    expect(addedSecondTaskTitle.parentElement).not.toHaveClass('completed')
-  })
+    expect(addedSecondTaskTitle.parentElement).not.toHaveClass('completed');
+  });
 
   it('should not be able to add a task with a empty title', () => {
     render(<TaskList />);
@@ -54,13 +54,13 @@ describe('App Page', () => {
         value: 'Desafio ReactJS Ignite'
       }
     });
-    
+
     fireEvent.click(addTaskButton);
 
     const addedFirstTaskTitle = screen.getByText('Desafio ReactJS Ignite');
 
     expect(addedFirstTaskTitle).toHaveTextContent('Desafio ReactJS Ignite');
-  })
+  });
 
   it('should be able to remove a task', async () => {
     render(<TaskList />);
@@ -85,16 +85,17 @@ describe('App Page', () => {
     const addedFirstTaskTitle = screen.getByText('Desafio ReactJS Ignite');
     const addedSecondTaskTitle = screen.getByText('Beber água');
 
-    expect(addedFirstTaskTitle).toBeInTheDocument()
+    expect(addedFirstTaskTitle).toBeInTheDocument();
     expect(addedSecondTaskTitle).toBeInTheDocument();
 
-    const [addedFirstTaskRemoveButton] = screen.getAllByTestId('remove-task-button');
+    const [addedFirstTaskRemoveButton] =
+      screen.getAllByTestId('remove-task-button');
 
     fireEvent.click(addedFirstTaskRemoveButton);
 
     expect(addedFirstTaskTitle).not.toBeInTheDocument();
     expect(addedSecondTaskTitle).toBeInTheDocument();
-  })
+  });
 
   it('should be able to check a task', () => {
     render(<TaskList />);
@@ -119,7 +120,7 @@ describe('App Page', () => {
     const [addedFirstTask, addedSecondTask] = screen.getAllByTestId('task');
 
     if (addedFirstTask.firstChild) {
-      fireEvent.click(addedFirstTask.firstChild)
+      fireEvent.click(addedFirstTask.firstChild);
     }
 
     expect(addedFirstTask).toBeInTheDocument();
@@ -127,5 +128,5 @@ describe('App Page', () => {
 
     expect(addedSecondTask).toBeInTheDocument();
     expect(addedSecondTask).not.toHaveClass('completed');
-  })
-})
+  });
+});
