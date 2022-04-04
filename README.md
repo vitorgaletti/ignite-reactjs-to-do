@@ -1,8 +1,12 @@
 # Desafio 01 - Conceitos do React
 
-<p align="center"><img alt="Desafio RocketNews" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc2fd7c29-54f4-45c2-95fa-b9fa269109b8%2Freactjs.png?table=block&id=51e4099a-6e2f-4d4b-ae94-f9fe75bb769d&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=250&userId=&cache=v2" width="200" /></p>
+<p align="center">
+<img alt="ReactJS Rocketseat" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc2fd7c29-54f4-45c2-95fa-b9fa269109b8%2Freactjs.png?table=block&id=51e4099a-6e2f-4d4b-ae94-f9fe75bb769d&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=250&userId=&cache=v2" width="200" hspace="50" align="center"/>
+<img alt="Desafio 01 - Conceitos do React" src="public/assets/img/logo.png" align="center" width="400"/>
 
 <br>
+
+<p align="center"><em>Confira o resultado do desafio em: <a href="https://to-do-rocketseat-vitor.netlify.app" target="_blank">to-do-rocketseat-vitor.netlify.app</a></em></p>
 
 ## :computer: Sobre o desafio
 
